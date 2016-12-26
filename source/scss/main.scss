@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
 body {
     padding-top: 80px;
 }
@@ -28,4 +34,24 @@ body {
 
 .bs-fix-bottom {
     padding-bottom: 0px;
+}
+
+/** FORMS */
+.form-group {
+
+    input,
+    button {
+        padding: .8rem .75rem;
+    }
+
+    span.validation {
+        display: none;
+        color: red;
+        position: absolute;
+        right: 19px;
+        bottom: 1px;
+        margin-top: -7px;
+        font-size: 10px;
+    }
+
 }

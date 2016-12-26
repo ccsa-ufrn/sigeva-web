@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { AuthorizationModule } from './authorization/authorization.module';
 import { ExternalComponent } from './external.component';
+import { HomeComponent } from './home.component';
 import Routes from './routes';
 
 @NgModule({
@@ -12,7 +13,8 @@ import Routes from './routes';
         RouterModule.forRoot(Routes)
     ],
     declarations: [
-        ExternalComponent
+        ExternalComponent,
+        HomeComponent
     ],
     bootstrap: [ExternalComponent]
 })

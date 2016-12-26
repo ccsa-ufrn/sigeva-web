@@ -1,4 +1,10 @@
+import { HomeComponent } from './home.component';
+
 export default [
+    {
+        path: '',
+        component: HomeComponent
+    },
     { 
         path: 'login', 
         loadChildren: 'app/js/external/authorization/authorization.module#AuthorizationModule' 
