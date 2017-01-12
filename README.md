@@ -1,15 +1,15 @@
-# sigeva/web
-Versão Web da aplicação de Sistema de Gestão de Eventos Acadêmicos (sigeva).
+# sigeva/web-dashboard
+Versão web para gerenciamento e acesso do sigeva.
 
-![Angular](https://img.shields.io/badge/Angular-2.4.0-green.svg)
+![Angular](https://img.shields.io/badge/Angular-2.4.2-green.svg)
 ![Node](https://img.shields.io/badge/Node.js-v7.0.0-green.svg)
 ![NPM](https://img.shields.io/badge/npm-v3.10.3-blue.svg)
 ![Express](https://img.shields.io/badge/Express-v4.14.0-lightgrey.svg)
 
 ## Instalação
-Mova-se para o diretório '/sigeva-web' e instale as dependências com **npm**
+Mova-se para o diretório '/sigeva-web-dashboard' e instale as dependências com **npm**
 ```
-# cd /path/to/sigeva/sigeva-web
+# cd /path/to/sigeva/sigeva-web-dashboard
 # npm install
 # npm run typings install
 ```

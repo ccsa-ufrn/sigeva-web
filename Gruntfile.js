@@ -45,6 +45,23 @@ module.exports = function (grunt) {
                     ext: '.css'
                 }]
             }
+        },
+
+        browserSync: {
+            dev: {
+                bsFiles: {
+                    src: [
+                        'app/**',
+                        'views/**',
+                        'assets/**'
+                    ]
+                },
+                options: {
+                    proxy: "localhost:8080",
+                    port: 8081,
+                    reloadDelay: 500 // espera a mudança de todos os arquivos
+                }
+            }
         }
 
     });
@@ -52,8 +69,9 @@ module.exports = function (grunt) {
     // Load plugins
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-browser-sync');
     grunt.loadNpmTasks("grunt-ts");
-
-    grunt.registerTask('default', ['ts:default','sass:default']);
+    
+    grunt.registerTask('default', ['ts:default', 'sass:default', 'browserSync:dev']);
 
 };

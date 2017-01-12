@@ -1,0 +1,7 @@
+{
+    "watch": [
+        "views/index.pug",
+        "index.js",
+        "config.js"
+    ]
+}
