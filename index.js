@@ -37,5 +37,8 @@ app.get('*', function(req, res) {
  * Starting the server
  */
 app.listen(8080, function() {
-	console.log('Front-end started on port 8080 in dev mode, but it will be loaded in 8081 for BrowserSync.');
+	console.log(`
+        Front-end started on port 8080 in dev mode,
+        but it will be loaded in 8081 for BrowserSync.
+    `);
 });

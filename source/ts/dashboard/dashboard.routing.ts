@@ -8,19 +8,14 @@ import {
     RouterModule
 } from '@angular/router';
 
-import { LoginComponent } from './login.component';
-import { RegisterComponent } from './register.component';
+import { DashboardComponent } from './dashboard.component';
 
 @NgModule({
     imports: [
         RouterModule.forChild([
             {
                 path: '',
-                component: LoginComponent
-            },
-            {
-                path: 'register',
-                component: RegisterComponent
+                component: DashboardComponent
             }
         ])
     ],
@@ -29,4 +24,4 @@ import { RegisterComponent } from './register.component';
     ]
 })
 
-export class AuthenticationRouting { }
+export class DashboardRouting { }

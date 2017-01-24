@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
-import { Config } from '../config';
+import { Config } from './config';
 
 @Component({
     selector: 'authentication-register',
-    template: `register page`
-    // templateUrl: `${Config.hostViews}/main.html`
+    templateUrl: `public/views/register.html`
 })
 export class RegisterComponent { }

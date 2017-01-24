@@ -1,13 +1,23 @@
 import { ModuleWithProviders, NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { MainComponent } from './main.component';
+import { LoginComponent } from './login.component';
+import { RegisterComponent } from './register.component';
 
 @NgModule({
     imports: [
         RouterModule.forRoot([
             {
                 path: '',
-                loadChildren: 'app/authentication/authentication.module#AuthenticationModule'
+                component: LoginComponent
+            },
+            {
+                path: 'register',
+                component: RegisterComponent
+            },
+            {
+                path: 'dashboard',
+                loadChildren: 'app/dashboard/dashboard.module#DashboardModule'
             },
             {
                 path: '404',
