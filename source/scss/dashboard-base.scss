@@ -1,6 +1,5 @@
 // Extra small devices (portrait phones, less than 576px)
 nav {
-
     display: block;
     background-color: rgb(240, 240, 240);
 }
@@ -40,14 +39,22 @@ nav {
         }
 
         select {
+            box-sizing: border-box;
             position: fixed;
             bottom: 10px;
             left: 10px;
             width: 120px;
-            height: 26px;
+            height: 30px;
         }
 
-    }
+    } /** end / nav */
+
+    main {
+
+        margin-left: 140px;
+        width: calc(100% - 140px);
+
+    } /** end / main */
 
 }
 
